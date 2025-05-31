@@ -1,0 +1,20 @@
+/* Write your code here. */
+.gamecard {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items:center;
+  color: #ffffff;
+  width:100vw;
+}
+.won {
+  display: flex;
+  flex-direction: column;
+}
+.scoress {
+  color: #6a59ff;
+}
+.buttonns {
+  background-color: #ffce27;
+  color: #3d3d3d;
+}
