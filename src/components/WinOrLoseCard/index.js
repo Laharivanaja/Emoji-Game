@@ -10,9 +10,7 @@ const WinOrLoseCard = props => {
           <div className="won">
             <h1>You Won</h1>
             <p>Best Score</p>
-            <p className="scoress">
-              12/12
-            </p>
+            <p className="scoress">12/12</p>
             <button className="buttonns" type="button" onClick={playAgain}>
               Play Again
             </button>

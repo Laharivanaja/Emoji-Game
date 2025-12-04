@@ -1,20 +1,120 @@
-/* Write your code here. */
 .gamecard {
+  width: 90%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  border-radius: 18px;
+  padding: 30px;
   display: flex;
-  flex-direction: row;
-  justify-content:space-around;
-  align-items:center;
+  justify-content: space-between;
+  align-items: center;
   color: #ffffff;
-  width:100vw;
+  gap: 20px;
+  animation: fadeIn 0.4s ease;
 }
+
 .won {
   display: flex;
   flex-direction: column;
+  gap: 12px;
 }
+
+.won h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.won p {
+  margin: 0;
+  font-size: 20px;
+}
+
 .scoress {
-  color: #6a59ff;
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffeb3b;
 }
+
+.gamecard img {
+  width: 230px;
+}
+
 .buttonns {
   background-color: #ffce27;
-  color: #3d3d3d;
+  border: none;
+  padding: 12px 26px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #222222;
+  margin-top: 10px;
+  transition: transform 0.25s ease;
+}
+
+.buttonns:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 900px) {
+  .gamecard {
+    padding: 24px;
+  }
+  .gamecard img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gamecard {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .gamecard img {
+    width: 180px;
+  }
+
+  .won h1 {
+    font-size: 28px;
+  }
+
+  .scoress {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 420px) {
+  .gamecard img {
+    width: 150px;
+  }
+
+  .won h1 {
+    font-size: 24px;
+  }
+
+  .won p {
+    font-size: 18px;
+  }
+
+  .scoress {
+    font-size: 22px;
+  }
+
+  .buttonns {
+    font-size: 16px;
+    padding: 10px 22px;
+  }
 }
