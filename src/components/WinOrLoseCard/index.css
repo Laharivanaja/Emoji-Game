@@ -1,120 +1,45 @@
-.gamecard {
-  width: 90%;
-  max-width: 900px;
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(8px);
-  border-radius: 18px;
-  padding: 30px;
+.win-lose-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  color: #ffffff;
-  gap: 20px;
-  animation: fadeIn 0.4s ease;
+  background-color: #ffffff33;
+  border-radius: 16px;
+  padding: 30px;
+  width: 600px;
+  margin: auto;
+  margin-top: 40px;
 }
 
-.won {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+.details-container {
+  text-align: center;
+  margin-right: 40px;
 }
 
-.won h1 {
-  font-size: 32px;
-  margin: 0;
+.result-text {
+  font-size: 40px;
+  color: white;
 }
 
-.won p {
-  margin: 0;
+.score-text {
+  color: white;
   font-size: 20px;
 }
 
-.scoress {
-  font-size: 26px;
-  font-weight: 700;
-  color: #ffeb3b;
+.score-value {
+  font-size: 32px;
+  color: #6a59ff;
+  font-weight: bold;
 }
 
-.gamecard img {
-  width: 230px;
-}
-
-.buttonns {
+.play-again-btn {
   background-color: #ffce27;
   border: none;
-  padding: 12px 26px;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
   cursor: pointer;
-  color: #222222;
-  margin-top: 10px;
-  transition: transform 0.25s ease;
+  font-weight: bold;
 }
 
-.buttonns:hover {
-  transform: scale(1.05);
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.92);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@media (max-width: 900px) {
-  .gamecard {
-    padding: 24px;
-  }
-  .gamecard img {
-    width: 200px;
-  }
-}
-
-@media (max-width: 600px) {
-  .gamecard {
-    flex-direction: column-reverse;
-    text-align: center;
-    padding: 20px;
-  }
-
-  .gamecard img {
-    width: 180px;
-  }
-
-  .won h1 {
-    font-size: 28px;
-  }
-
-  .scoress {
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 420px) {
-  .gamecard img {
-    width: 150px;
-  }
-
-  .won h1 {
-    font-size: 24px;
-  }
-
-  .won p {
-    font-size: 18px;
-  }
-
-  .scoress {
-    font-size: 22px;
-  }
-
-  .buttonns {
-    font-size: 16px;
-    padding: 10px 22px;
-  }
+.result-img {
+  width: 250px;
 }

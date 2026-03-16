@@ -1,61 +1,15 @@
-/* Write your code here. */
-li {
-  list-style-type: none;
-  margin: 12px;
+.emoji-item {
+  margin: 10px;
 }
 
-.emoji-card-btn {
-  background-color: #ffffff;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 18px;
+.emoji-button {
+  background-color: #ffffff33;
+  border: 1px solid #ffffff30;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  padding: 20px;
+  cursor: pointer;
 }
 
-.emoji-card-btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
-}
-
-.emoji-card-btn img {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-}
-
-@media (max-width: 900px) {
-  .emoji-card-btn img {
-    width: 70px;
-    height: 70px;
-  }
-}
-
-@media (max-width: 600px) {
-  .emoji-card-btn {
-    padding: 14px;
-  }
-
-  .emoji-card-btn img {
-    width: 60px;
-    height: 60px;
-  }
-}
-
-@media (max-width: 420px) {
-  li {
-    margin: 8px;
-  }
-
-  .emoji-card-btn {
-    padding: 10px;
-    border-radius: 10px;
-  }
-
-  .emoji-card-btn img {
-    width: 50px;
-    height: 50px;
-  }
+.emoji-image {
+  width: 60px;
 }
