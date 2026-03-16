@@ -53,16 +53,11 @@ Navigate into the project:
 
 cd Emoji-Game
 
+## Setup
 
-Install dependencies:
+Make sure you are using Node.js 18.
 
+Then run:
 
 npm install
-
-
-Start the development server:
-
-
 npm start
-
-
